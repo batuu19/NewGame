@@ -59,50 +59,6 @@ public:
 	{
 		drawRect(x0, y0, x0 + width, y0 + height, c);
 	}
-	void drawSpriteNonChroma(int x, int y, const Surface& s)
-	{
-		drawSpriteNonChroma(x, y, s.getRect(), s);
-	}
-	void drawSpriteNonChroma(int x, int y, const RectI& srcRect, const Surface& s)
-	{
-		drawSpriteNonChroma(x, y, srcRect, getScreenRect(), s);
-	}
-	void drawSpriteNonChroma(int x, int y, RectI srcRect, const RectI& clip, const Surface& s);
-	void drawSpriteNonChroma(const VecI2& pos, const Surface& s)
-	{
-		drawSpriteNonChroma(pos.x, pos.y, s);
-	}
-	void drawSpriteNonChroma(const VecI2& pos, const RectI& srcRect, const Surface& s)
-	{
-		drawSpriteNonChroma(pos.x, pos.y, srcRect, s);
-	}
-	void drawSpriteNonChroma(const VecI2& pos, RectI srcRect, const RectI& clip, const Surface& s)
-	{
-		drawSpriteNonChroma(pos.x, pos.y, srcRect, clip, s);
-	}
-
-
-	void drawSprite(int x, int y, const Surface& s, Color chroma = Colors::Magenta)
-	{
-		drawSprite(x, y, s.getRect(), s, chroma);
-	}
-	void drawSprite(int x, int y, const RectI& srcRect, const Surface& s, Color chroma = Colors::Magenta)
-	{
-		drawSprite(x, y, srcRect, getScreenRect(), s, chroma);
-	}
-	void drawSprite(int x, int y, RectI srcRect, const RectI& clip, const Surface& s, Color chroma = Colors::Magenta);
-	void drawSprite(const VecI2& pos, const Surface& s, Color chroma = Colors::Magenta)
-	{
-		drawSprite(pos.x, pos.y, s, chroma);
-	}
-	void drawSprite(const VecI2& pos, const RectI& srcRect, const Surface& s, Color chroma = Colors::Magenta)
-	{
-		drawSprite(pos.x, pos.y, srcRect, s, chroma);
-	}
-	void drawSprite(const VecI2& pos, RectI srcRect, const RectI& clip, const Surface& s, Color chroma = Colors::Magenta)
-	{
-		drawSprite(pos.x, pos.y, srcRect, clip, s, chroma);
-	}
 	~Graphics();
 private:
 	Microsoft::WRL::ComPtr<IDXGISwapChain>				pSwapChain;
