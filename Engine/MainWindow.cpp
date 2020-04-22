@@ -206,3 +206,5 @@ LRESULT MainWindow::HandleMsg(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 
 	return DefWindowProc(hWnd, msg, wParam, lParam);
 }
+
+const wchar_t* MainWindow::wndClassName = { L"B wnd class name" };
