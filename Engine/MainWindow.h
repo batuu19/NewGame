@@ -7,6 +7,7 @@
 #include "BException.h"
 #include <string>
 
+
 // for granting special access to hWnd only for Graphics constructor
 class HWNDKey
 {

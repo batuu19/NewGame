@@ -1,8 +1,7 @@
+//#include "BWin.h"
+#include "pch.h"
 #include "MainWindow.h"
 #include <cassert>
-
-#include "pch.h"
-
 
 
 MainWindow::MainWindow(HINSTANCE hInst, wchar_t* pArgs)
@@ -148,10 +147,10 @@ LRESULT MainWindow::HandleMsg(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 		{
 			if (wParam & (MK_LBUTTON | MK_RBUTTON))
 			{
-				pt.x = std::max(short(0), pt.x);
-				pt.x = std::min(short(Graphics::ScreenWidth - 1), pt.x);
-				pt.y = std::max(short(0), pt.y);
-				pt.y = std::min(short(Graphics::ScreenHeight - 1), pt.y);
+				pt.x = max(short(0), pt.x);
+				pt.x = min(short(Graphics::ScreenWidth - 1), pt.x);
+				pt.y = max(short(0), pt.y);
+				pt.y = min(short(Graphics::ScreenHeight - 1), pt.y);
 				mouse.OnMouseMove(pt.x, pt.y);
 			}
 			else
