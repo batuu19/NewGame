@@ -155,16 +155,22 @@
     <ClInclude Include="BMath.h" />
     <ClInclude Include="BWin.h" />
     <ClInclude Include="Colors.h" />
+    <ClInclude Include="ContainerUtils.h" />
     <ClInclude Include="DXErr.h" />
+    <ClInclude Include="ExampleSquare.h" />
     <ClInclude Include="FrameTimer.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="GameObject.h" />
     <ClInclude Include="Graphics.h" />
+    <ClInclude Include="IDrawable.h" />
+    <ClInclude Include="IEntity.h" />
     <ClInclude Include="Keyboard.h" />
     <ClInclude Include="MainWindow.h" />
     <ClInclude Include="Mouse.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Rect.h" />
+    <ClInclude Include="StaticObject.h" />
     <ClInclude Include="Surface.h" />
   </ItemGroup>
   <ItemGroup>
@@ -172,6 +178,7 @@
     <ClCompile Include="DXErr.cpp" />
     <ClCompile Include="FrameTimer.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="Keyboard.cpp" />
     <ClCompile Include="MainWindow.cpp" />
